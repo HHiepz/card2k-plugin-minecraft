@@ -9,12 +9,6 @@
   
   <!-- Badges -->
   <p>
-    <a href="https://github.com/hhiepz/card2k-plugin-minecraft/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/hhiepz/card2k-plugin-minecraft" alt="contributors" />
-    </a>
-    <a href="">
-      <img src="https://img.shields.io/github/last-commit/hhiepz/card2k-plugin-minecraft" alt="last update" />
-    </a>
     <a href="https://github.com/hhiepz/card2k-plugin-minecraft/network/members">
       <img src="https://img.shields.io/github/forks/hhiepz/card2k-plugin-minecraft" alt="forks" />
     </a>
