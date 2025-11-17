@@ -1,0 +1,83 @@
+size: 9
+menu_title: Chọn mệnh giá thẻ
+items:
+  "10000":
+    material: BOOK
+    slot: 0
+    display_name: "&b10,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 10000"
+
+  "20000":
+    material: BOOK
+    slot: 1
+    display_name: "&b20,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 20000"
+
+  "30000":
+    material: BOOK
+    slot: 2
+    display_name: "&b30,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 30000"
+
+  "50000":
+    material: BOOK
+    slot: 3
+    display_name: "&b50,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 50000"
+
+  "100000":
+    material: BOOK
+    slot: 4
+    display_name: "&b100,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 100000"
+
+  "200000":
+    material: BOOK
+    slot: 5
+    display_name: "&b200,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 200000"
+
+  "500000":
+    material: BOOK
+    slot: 6
+    display_name: "&b500,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 500000"
+
+  "1000000":
+    material: BOOK
+    slot: 7
+    display_name: "&b1,000,000"
+    lore:
+      - "&9Nhấn vào đây để chọn mệnh giá này"
+    left_click_commands:
+      - "[sound] ENTITY_ITEM_PICKUP 1 1"
+      - "[player] napthe textchoosecardprice 1000000"
+
