@@ -15,7 +15,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Viettel"
+      - "[player] napthe textchoosecard VIETTEL"
       - "[openguimenu] napthe_menu2"
       - "[close]"
   Vinaphone:
@@ -28,7 +28,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Vinaphone"
+      - "[player] napthe textchoosecard VINAPHONE"
       - "[openguimenu] napthe_menu2"
   Mobifone:
     material: BOOK
@@ -40,7 +40,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Mobifone"
+      - "[player] napthe textchoosecard MOBIFONE"
       - "[openguimenu] napthe_menu2"
   Vietnamobile:
     material: BOOK
@@ -52,7 +52,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Vietnamobile"
+      - "[player] napthe textchoosecard VNMOBI"
       - "[openguimenu] napthe_menu2"
   Vcoin:
     material: BOOK
@@ -64,7 +64,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Vcoin"
+      - "[player] napthe textchoosecard VCOIN"
       - "[openguimenu] napthe_menu2"
   Zing:
     material: BOOK
@@ -76,7 +76,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Zing"
+      - "[player] napthe textchoosecard ZING"
       - "[openguimenu] napthe_menu2"
   Gate:
     material: BOOK
@@ -88,7 +88,7 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Gate"
+      - "[player] napthe textchoosecard GATE"
       - "[openguimenu] napthe_menu2"
   Garena:
     material: BOOK
@@ -100,5 +100,5 @@ items:
       - "&9Nhấn vào đây để chọn loại thẻ này"
     left_click_commands:
       - "[sound] ENTITY_ITEM_PICKUP 1 1"
-      - "[player] napthe textchoosecard Garena"
+      - "[player] napthe textchoosecard GARENA"
       - "[openguimenu] napthe_menu2"
