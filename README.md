@@ -1,17 +1,14 @@
 <div align="center">
 
   <img src="assets/logo/card2k.png" alt="logo" width="200" height="auto" />
-  <h1>CARD2K PLUGIN MINECRAFT</h1>
+  <h1>DONATE 2K (D2K)</h1>
   
   <p>
-    Plugin Minecraft hỗ trợ nạp thẻ cào lên website.
+    Sản phẩm thuộc sở hữu của Card2K - 2K9XTEAM - Nexus Studio.
   </p>
   
   <!-- Badges -->
   <p>
-    <a href="https://github.com/hhiepz/card2k-plugin-minecraft/network/members">
-      <img src="https://img.shields.io/github/forks/hhiepz/card2k-plugin-minecraft" alt="forks" />
-    </a>
     <a href="https://github.com/hhiepz/card2k-plugin-minecraft/stargazers">
       <img src="https://img.shields.io/github/stars/hhiepz/card2k-plugin-minecraft" alt="stars" />
     </a>
@@ -29,24 +26,24 @@
 <h4>
     <a href="https://card2k.com/">Website gửi thẻ</a>
   <span> · </span>
-    <a href="https://discord.card2k.com/">Báo cáo lỗi</a>
+    <a href="https://discord.card2k.com/">Liên hệ hỗ trợ</a>
   <span> · </span>
-    <a href="https://discord.card2k.com/">Yêu cầu thêm tính năng</a>
+    <a href="https://discord.card2k.com/">Website kiểm thử</a>
   </h4>
 </div>
 
 <!-- Tính năng -->
 ## 📃 Tính năng
 
-- Nạp thẻ tự động
-- Thống kê tổng nạp theo: ngày / tháng / năm / ngày cụ thể
-- Placeholder hiện tổng nạp
-- Tự động chuyển dữ liệu từ plugin thesieutoc
+- Nạp thẻ cào
+  - Mốc nạp
+  - Thống kê
+  - Thông báo biển động (discord)
 
 ## ✨ Tương thích
 
-- Dùng được cho các server **Spigot** và **Paper**
-- Hỗ trợ Minecraft từ phiên bản **1.13** trở lên (đến phiên bản mới nhất)
+- Dùng được cho các server **Spigot** / **Paper** / **Folia** / **Leaf**
+- Hỗ trợ Minecraft từ phiên bản **1.12.*** trở lên (đến phiên bản mới nhất)
 
 <!-- Hướng dẫn sử dụng -->
 ## Hướng dẫn sử dụng
@@ -54,34 +51,65 @@
 **Cài đặt:**
 
 - Cài đặt plugin [tại đây](https://github.com/hhiepz/card2k-plugin-minecraft/releases)
-- Plugin cần có [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) để hoạt động
+- Plugin cần có [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) để hoạt động modules ngoài
 
 **Danh sách lệnh:**
 
-| Lệnh                             | Mô tả                                 | Quyền        |
-|----------------------------------|---------------------------------------|--------------|
-| `/napthe`                        | Mở menu click nạp thẻ                 | Người chơi   |
-| `/card2kadmin reload`            | Tải lại cấu hình plugin               | Chủ server   |
-| `/card2kadmin migrate`           | Chuyển dữ liệu từ plugin thesieutoc   | Chủ server   |
-| `/card2kadmin view <thời gian>`  | Xem thống kê nạp thẻ theo thời gian   | Chủ server   |
+| Lệnh | Mô tả | Quyền |
+|------|-------|-------|
+| `/napthe <nhà mạng> <mệnh giá> <serial> <code>` | Nạp thẻ | `card2k.use` |
+| `/napthe gui` | Mở giao diện nạp thẻ | `card2k.gui` |
+| `/napthe reload` | Tải lại cấu hình | `card2k.reload` |
+| `/napthe help` | Xem trợ giúp | - |
 
 **Placeholder:**
 
-| Placeholder         | Mô tả      |
+| Placeholder | Mô tả |
 |---------------------|------------|
-| `%card2k_total%`    | Tổng nạp   |
+| `%card2k_total_topup%` | Tổng nạp của người chơi |
+| `%card2k_total_topup_global%` | Tổng nạp của toàn server |
 
-**Cấu trúc file plugin:**
-
+### Phần thưởng theo mệnh giá
+```yaml
+rewards:
+  10000:
+    - "give %player% diamond 1"
+    - "eco give %player% 10000"
 ```
-Card2K/
-├── card2k.db
-├── main-config.yml
-├── message-config.yml
-├── milestone-config.yml
+
+### Hệ số nhân thưởng
+```yaml
+reward_multiplier: 2  # Thưởng x2
 ```
 
-> - `card2k.db`: File lưu trữ toàn bộ dữ liệu nạp thẻ (database).
-> - `main-config.yml`: File cấu hình chính để điều chỉnh các thiết lập của plugin.
-> - `message-config.yml`: File chứa các thông báo, tin nhắn gửi tới người chơi.
-> - `milestone-config.yml`: File cấu hình các mốc nạp và phần thưởng tương ứng cho người chơi.
+### Mốc nạp tích lũy
+```yaml
+mocnap:
+  enabled: true
+  milestones:
+    50000:
+      - "give %player% diamond 5"
+    100000:
+      - "give %player% diamond 10"
+```
+
+### Discord Webhook
+```yaml
+discord:
+  enabled: true
+  webhook_url: "https://discord.com/api/webhooks/..."
+```
+
+## Tác giả
+
+- **Nghialonton** – Developer  
+  🔗 GitHub: https://github.com/Megumi1608
+
+- **Nexus Studio** – Organization  
+  💬 Discord: https://dsc.gg/nexusstudio
+
+
+## Phát hành & Hỗ trợ
+
+- **Card2K** – Official Support  
+  💬 Discord: https://discord.card2k.com
