@@ -1,7 +1,6 @@
 <div align="center">
 
   <img src="assets/logo/card2k.png" alt="logo" width="200" height="auto" />
-  <h1>DONATE 2K (D2K)</h1>
   
   <p>
     Sản phẩm thuộc sở hữu của Card2K - 2K9XTEAM - Nexus Studio.
