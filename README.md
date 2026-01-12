@@ -23,7 +23,7 @@
   </p>
    
 <h4>
-    <a href="https://card2k.com/">Website gửi thẻ</a>
+    <a href="https://minecraft.card2k.com/">Tài liệu</a>
   <span> · </span>
     <a href="https://discord.card2k.com/">Liên hệ hỗ trợ</a>
   <span> · </span>
