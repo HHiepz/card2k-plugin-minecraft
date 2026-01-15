@@ -56,17 +56,49 @@
 
 | Lệnh | Mô tả | Quyền |
 |------|-------|-------|
-| `/napthe <nhà mạng> <mệnh giá> <serial> <code>` | Nạp thẻ | `card2k.use` |
+| `/napthe <nhà-mạng> <mệnh-giá> <serial> <code>` | Nạp thẻ cào | `card2k.use` |
 | `/napthe gui` | Mở giao diện nạp thẻ | `card2k.gui` |
 | `/napthe reload` | Tải lại cấu hình | `card2k.reload` |
 | `/napthe help` | Xem trợ giúp | - |
+| `/napbank <số-tiền>` | Nạp tiền qua ngân hàng | `card2k.banking` |
+| `/napbank gui` | Mở giao diện nạp ngân hàng | `card2k.banking.gui` |
+| `/napbank clear` | Xóa / reset trạng thái nạp ngân hàng hiện tại | - |
 
-**Placeholder:**
+### Quyền hạn
 
+| Quyền | Mô tả | Mặc định |
+|-------|-------|----------|
+| `card2k.use` | Sử dụng lệnh nạp thẻ | true |
+| `card2k.gui` | Sử dụng GUI nạp thẻ | true |
+| `card2k.banking` | Sử dụng lệnh nạp ngân hàng | true |
+| `card2k.banking.gui` | Sử dụng GUI nạp ngân hàng | true |
+| `card2k.reload` | Reload cấu hình | op |
+| `card2k.admin` | Quyền admin đầy đủ (bao gồm tất cả quyền trên) | op |
+
+## 📌 Placeholder hỗ trợ
+
+### 👤 Người chơi
 | Placeholder | Mô tả |
-|---------------------|------------|
-| `%card2k_total_topup%` | Tổng nạp của người chơi |
-| `%card2k_total_topup_global%` | Tổng nạp của toàn server |
+|------------|------|
+| `%card2k_total_topup%` | Tổng số tiền người chơi đã nạp (đã format) |
+| `%card2k_total_topup_raw%` | Tổng số tiền người chơi đã nạp (chưa format) |
+| `%card2k_bank_topup%` | Tổng tiền nạp qua ngân hàng của người chơi |
+| `%card2k_card_topup%` | Tổng tiền nạp qua thẻ cào của người chơi |
+| `%card2k_next_milestone%` | Mốc nạp tiếp theo của người chơi |
+
+### 🌍 Toàn server
+| Placeholder | Mô tả |
+|------------|------|
+| `%card2k_total_topup_global%` | Tổng số tiền đã nạp của toàn server (đã format) |
+| `%card2k_total_topup_global_raw%` | Tổng số tiền đã nạp của toàn server (chưa format) |
+| `%card2k_bank_topup_global%` | Tổng tiền nạp ngân hàng của toàn server |
+| `%card2k_card_topup_global%` | Tổng tiền nạp thẻ cào của toàn server |
+
+### 🏆 Bảng xếp hạng (Top nạp)
+| Placeholder | Mô tả |
+|------------|------|
+| `%card2k_top_player_1%` → `%card2k_top_player_10%` | Tên người chơi theo thứ hạng |
+| `%card2k_top_amount_1%` → `%card2k_top_amount_10%` | Số tiền nạp tương ứng với thứ hạng |
 
 ### Phần thưởng theo mệnh giá
 ```yaml
