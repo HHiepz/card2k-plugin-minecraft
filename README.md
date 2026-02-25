@@ -59,4 +59,8 @@ Tài liệu hướng dẫn: [minecraft.card2k.com](https://minecraft.card2k.com/
 ## Phát hành & Hỗ trợ
 
 - **Card2K** – Official Support  
-  💬 Discord: https://discord.card2k.com
+  💬 Discord: https://discord.card2k.
+  
+<hr>
+
+  <sub><i>Ngày cập nhật mới nhất: 25/02/2026</i> - v1.0.8</sub>
